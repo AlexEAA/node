@@ -8,8 +8,8 @@ WORKDIR $HOME
 
 ENV APP_NAME=angularspree-client
 
-# before switching to user we need to set permission properly
-# copy all files, except the ignored files from .dockerignore
+# перед переключением на пользователя нам нужно правильно установить разрешение
+# копировать все файлы, кроме игнорируемых файлов из .dockerignore
 COPY . $HOME/$APP_NAME/
 RUN chown -R app:app $HOME/*
 
