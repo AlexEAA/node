@@ -1,6 +1,6 @@
 FROM node:7.7.1
 
-# prepare a user which runs everything locally! - required in child images!
+# подготовить пользователя, который запускает все локально! - требуется в дочерних изображениях!
 RUN useradd --user-group --create-home --shell /bin/false app
 
 ENV HOME=/home/app
